@@ -63,23 +63,23 @@ while cap.isOpened():
         cv2.line(roi, start, end, [0, 255, 0], 2)
 
     l += 1  # need or else count is down 1
-    # can make concise later hard code for now
-    # if l == 1:
-    #     if arearatio < 17.5:
-    #         l == 0
-    #         cv2.putText(frame, '0', (0, 50), font, 2, (255, 255, 255), 3, line)
-    #         zero_array.append(l)
-    #         print(zero_array)
-    #         if len(zero_array) == 30:
-    #             #webbrowser.open('http://google.com')
-    #             zero_array.clear()  # clears array so it can be used again
-    #     else:
-    #         cv2.putText(frame, '1', (0, 50), font, 2, (255, 255, 255), 3, line)
-    #         one_array.append(l)
-    #         print(one_array)
-    #         if len(one_array) == 30:
-    #             #webbrowser.open('http://google.com')
-    #             one_array.clear()  # clears array so it can be used again
+    #can make concise later hard code for now
+    if l == 1:
+        if arearatio < 17.5:
+            l == 0
+            cv2.putText(frame, '0', (0, 50), font, 2, (255, 255, 255), 3, line)
+            zero_array.append(0)
+            print(zero_array)
+            if len(zero_array) == 30:
+                #webbrowser.open('http://google.com')
+                zero_array.clear()  # clears array so it can be used again
+        else:
+            cv2.putText(frame, '1', (0, 50), font, 2, (255, 255, 255), 3, line)
+            one_array.append(l)
+            print(one_array)
+            if len(one_array) == 30:
+                #webbrowser.open('http://google.com')
+                one_array.clear()  # clears array so it can be used again
     if l == 2:
         cv2.putText(frame, '2', (0, 50), font, 2, (255, 255, 255), 3, line)
         two_array.append(l)
