@@ -96,7 +96,7 @@ while cap.isOpened():
 
             if l == 1:
                 if arearatio < 2:
-                    cv2.putText(frame, 'Waiting', (0, 50), font, 2, (255, 255, 255), 3, cv2.LINE_AA)
+                    cv2.putText(frame, 'Waiting (in Spotify Loop)', (0, 50), font, 2, (255, 255, 255), 3, cv2.LINE_AA)
                     # print(arearatio)
                 else:
                     if arearatio < 17.5:
