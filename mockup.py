@@ -112,7 +112,7 @@ while cap.isOpened():
                         one_array.append(l)
                         print(one_array)
                         if len(one_array) == 30:
-                            this.sendNotification("SPOTIFY_TOGGLE")
+                            spotify_shuffle = "http://192.168.0.16:8080/api/notification/SPOTIFY_NEXT"
                             one_array.clear()  # clears array so it can be used again
             if l == 2:
                 cv2.putText(frame, 'Shuffle' , (0, 50), font, 2, (255, 255, 255), 3, line)
