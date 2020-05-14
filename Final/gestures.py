@@ -1,6 +1,5 @@
 import cv2
 import math
-import webbrowser
 import json
 import requests
 import time
