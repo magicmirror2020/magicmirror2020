@@ -1,13 +1,3 @@
-/* Magic Mirror Config Sample
- *
- * By Michael Teeuw http://michaelteeuw.nl
- * MIT Licensed.
- *
- * For more information on how you can configure this file
- * See https://github.com/MichMich/MagicMirror#configuration
- *
- */
-
 var config = {
 	address: "0.0.0.0",
 	port: 8080,
@@ -25,19 +15,11 @@ var config = {
 	language: "en",
 	timeFormat: 24,
 	units: "metric",
-	// serverOnly:  true/false/"local" ,
-			     // local for armv6l processors, default
-			     //   starts serveronly and then starts chrome browser
-			     // false, default for all  NON-armv6l devices
-			     // true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
 		{
 			module: 'MMM-Cursor'
 		},
-		//{	module: 'compliments',
-		//	position: 'bottom_bar'
-		//},
 		//{
 		//	module: "updatenotification",
 		//	position: "top_bar"
